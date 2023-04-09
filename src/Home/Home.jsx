@@ -11,6 +11,8 @@ import FormHelperText from '@material-ui/core/FormHelperText';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import CircularProgress from '@material-ui/core/CircularProgress';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import Link from '@mui/material/Link';
 
 const useStyles = makeStyles((theme) => ({
   form: {
@@ -38,6 +40,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   header: {
+    position: 'relative',
     backgroundColor: theme.palette.primary.main,
     color: theme.palette.common.white,
     padding: theme.spacing(2),
@@ -162,6 +165,16 @@ function Home() {
       <Typography component="h1" variant="h5">
         College Recommender
       </Typography>
+      <Link href="https://github.com/GamerRaven/GPT-College-Recommender" target="_blank" color="inherit">
+      <GitHubIcon
+        style={{
+        position: 'absolute',
+        top: '50%',
+        right: 40,
+        transform: 'translateY(-50%)',
+        }}
+      />
+      </Link>
     </div>
       <form className={classes.form} onSubmit={handleSubmit} style={{marginTop:"30px"}}>
       <Box

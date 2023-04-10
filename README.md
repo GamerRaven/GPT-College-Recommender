@@ -2,6 +2,10 @@
 
 College Recommendation Tool Powered By ChatGPT
 
+## Live Demo
+
+https://gpt.ocngic.org
+
 ## Installation
 
 Download the files
